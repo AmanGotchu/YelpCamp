@@ -15,7 +15,7 @@ var flash = require('connect-flash');
 //mongoose.connect("mongodb://localhost/yelp_camp");
 
 var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp";
-mongoose.connect(process.env.DATABASEURL);
+mongoose.connect("mongodb://localhost/yelp_camp");
 
 app.use(flash());
 var Comment = require('./models/comments');
